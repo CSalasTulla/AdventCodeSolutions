@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int temp,store,ans;
+string str;
+int thrd,sec;
+int main() 
+{
+    for(int i=1;i<=2253;i++)
+    {
+        getline(cin,str);
+        if(str=="")
+        {
+            if(store>ans)
+            {
+                thrd = sec;
+                sec = ans;
+                ans=store;
+            }
+            else if(store>sec)
+            {
+                thrd = sec;
+                sec = store;
+            }
+            else if(store>thrd)
+            {
+                thrd = store;
+            }
+            store=0;
+            continue;
+        }
+        temp=stod(str);
+        store+=temp;
+    }
+    cout<<ans+sec+thrd<<endl;
+    cout << ans << "+" << sec << "+" << thrd << endl;
+    //cout << sec<<endl<<thrd<<endl;
+    return 0;
+}
