@@ -58,7 +58,6 @@ int main()
                 }
             }
         }
-        
         if     (letter == "a"){result += 1;}
         else if(letter == "b") {result += 2;}
         else if(letter == "c") {result += 3;}
@@ -111,7 +110,6 @@ int main()
         else if(letter == "X") {result += 50;}
         else if(letter == "Y") {result += 51;}
         else if(letter == "Z") {result += 52;}
-        //cout << "Line: " << i << " Result: " << result << endl;
     }
     cout << "Result: " << result << endl;
 }
