@@ -13,23 +13,23 @@ Find the Elf carrying the most Calories. How many total Calories is that Elf car
 #include <iostream>
 #include <string>
 using namespace std;
-int temp,store,ans;
+int temp,store,first,thrd,sec;
 string str;
-int thrd,sec;
 
 
 int main() 
 {
-    for(int i=1;i<=2253;i++)
+    for(int i = 1 ;i < 2249; i++) // 2248 is to set the number of lines of imput we are working with
     {
+        //getting input of day1.txt stored into str
         getline(cin,str);
-        if(str=="")
+        if(str=="")               //When data of line ends we execute the code inside if statement
         {
-            if(store>ans)
+            if(store>first)         //This 3 If statements are checking what are the 3 biggest values and storing them if needed
             {
                 thrd = sec;
-                sec = ans;
-                ans=store;
+                sec = first;
+                first=store;
             }
             else if(store>sec)
             {
@@ -46,8 +46,8 @@ int main()
         temp=stod(str);
         store+=temp;
     }
-    cout<<ans+sec+thrd<<endl;
-    cout << ans << "+" << sec << "+" << thrd << endl;
-    //cout << sec<<endl<<thrd<<endl;
+
+    cout << endl << "Result Day 1-first section: " << first << endl;
+    cout << "Result Day 1-secondsection: " << first+sec+thrd << endl;
     return 0;
 }

@@ -25,6 +25,8 @@ In this example, if you were to follow the strategy guide, you would get a total
 
 What would your total score be if everything goes exactly according to your strategy guide?*/
 
+/*-----------------------------------------Day 2a-----------------------------------------------------------------------------------------------------------------------*/
+
 #include <iostream>
 #include <string>
 using namespace std;
