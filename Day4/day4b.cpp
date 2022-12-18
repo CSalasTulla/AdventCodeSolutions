@@ -43,7 +43,7 @@ int main()
         v4 = stoi(str);
 
         //checking values that have those special characteristics(values that it's range fully contains the other)
-        if((v3 >= v1 && v3 <= v2)||(v1 >= v3 && v1 <=v4)) //|| ((v1 >= v3 || v1 <= v4)||(v2 >= v3 || v2 <= v4)))
+        if((v3 >= v1 && v3 <= v2)||(v1 >= v3 && v1 <=v4))
         {
             result +=1;//counting how many times those values that it's range fully contains the other
         }
