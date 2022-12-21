@@ -43,7 +43,6 @@ In how many assignment pairs does one range fully contain the other
 
 #include <iostream>
 using namespace std;
-#include <stack>
 
 int v1,v2,v3,v4;
 string str;
