@@ -49,7 +49,7 @@ The Elves just need to know which crate will end up on top of each stack; in thi
 
 After the rearrangement procedure completes, what crate ends up on top of each stack?
 
------------------------------------Day 5a---------------------------------------------------------------------------------------------------------------------------------------------*/
+-----------------------------------Day 5a--------------------------------------------------------------------------------------------------------*/
 
 #include <iostream>
 using namespace std; 

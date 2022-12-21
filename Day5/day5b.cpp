@@ -42,7 +42,7 @@ In this example, the CrateMover 9001 has put the crates in a totally different o
 
 Before the rearrangement process finishes, update your simulation so that the Elves know where they should stand to be ready to unload the final supplies. After the rearrangement procedure completes, what crate ends up on top of each stack?*/
 
-//-----------------------------------Day 5b---------------------------------------------------------------------------------------------------------------------------------------------*/
+//-----------------------------------Day 5b---------------------------------------------------------------------------------------------------------------*/
 
 #include <iostream>
 using namespace std; 
@@ -119,7 +119,7 @@ int main()
 
     string t1,t2,t3;
 
-    stack<char>st;
+    stack<char>st;      //Let's us set another stack apart to store them separately in the reverse order
 
     //Stack to store values an pop back so we can follow the instructions of the problem
 
@@ -149,7 +149,7 @@ int main()
             {
                 top = s1.top();
                 s1.pop();
-                st.push(top);
+                st.push(top);       //pushing to the separate stack
             }
             else if(from == 2)
             {
@@ -205,9 +205,9 @@ int main()
         {
             if(to == 1)
             {
-                top = st.top();
-                st.pop();
-                s1.push(top);
+                top = st.top();     //setting the top of the separate stack to the variable "top"
+                st.pop();           //eliminating the top of the sepatate stack "st"
+                s1.push(top);       //pushing the variable "top" to the correspodent stack
             }
             else if(to == 2)
             {
