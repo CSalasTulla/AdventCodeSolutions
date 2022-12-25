@@ -28,7 +28,7 @@ nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg: first marker after character 10
 zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 11
 How many characters need to be processed before the first start-of-packet marker is detected?
 
----------------------------Day 6a-----------------------------------------------------------------------------------------------------*/
+---------------------------Day 6a-------------------------------------------------------------------------------------------------------------------------*/
 
 #include <iostream>
 using namespace std;
