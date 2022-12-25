@@ -38,19 +38,20 @@ string str,c1,c2,c3,c4;
 int main()
 {
 
-    getline(cin,str);
+    getline(cin,str);                       //Input of the string pasted on the command line
 
-    for(int i = 0; i < str.length(); i++)
+    for(int i = 0; i < str.length(); i++)   //for loop to go through the whole string
     {
-        c1 = str[i];
+        c1 = str[i];                        //setting the 4 letters to their variables
         c2 = str[i+1];
         c3 = str[i+2];
         c4 = str[i+3]; 
-
-        if(c1 != c2 && c1 != c3 && c1 != c4 && c2 != c3 && c2 != c4 && c3 != c4)
+        
+        //If statement makes sure that there are not repeated letters
+        if(c1 != c2 && c1 != c3 && c1 != c4 && c2 != c3 && c2 != c4 && c3 != c4) 
         {
-            cout << i+4 << endl;
-            return 0;
+            cout << i+4 << endl;            //Printing the marker
+            return 0;                       //Terminating the program
         }
     }
 }
